@@ -11,9 +11,20 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
+/**
+ * Servicio que valida números de teléfono.
+ */
 @Service
 public class ValidatePhoneServiceImpl implements ValidatePhoneService {
 
+    /**
+     * Servicio que valida un número de teléfono
+     * @param serviceRequestDto Objeto con el formato de entrada que espera el servicio externo.
+     *                          Contiene el número de teléfono que se va a enviar para su validación.
+     * @return ServiceResponseDto Objeto con el formato de salida que devuelve el servicio externo.
+     *         Contiene un valor boolean indicando la validez del número de teléfono,
+     *         además de datos adicionales sobre el número de teléfono.
+     */
     @Override
     public ServiceResponseDto validatePhone(ServiceRequestDto serviceRequestDto) {
 

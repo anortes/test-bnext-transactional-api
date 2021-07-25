@@ -11,4 +11,5 @@ public interface ContactMapper {
     ContactMapper INSTANCE = Mappers.getMapper( ContactMapper.class );
     ContactResponseDto ContactModelToContactResponseDto(ContactModel contactModel);
     ContactModel ContactRequestDtoToContactModel(ContactRequestDto contactRequestDto);
+    ContactRequestDto ContactModelToContactRequestDto(ContactModel contactModel);
 }

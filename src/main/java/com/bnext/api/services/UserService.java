@@ -11,7 +11,7 @@ import java.util.List;
 
 public interface UserService {
 
-    List<UserResponseDto> finAllUsers();
+    List<UserResponseDto> findAllUsers();
 
     UserResponseDto addUser(UserRequestDto userRequestDto);
 
@@ -24,7 +24,7 @@ public interface UserService {
     List<ContactResponseDto> saveUserContacts(Long userId, List<ContactRequestDto> contactsRequestDto)
             throws ResourceNotFoundException, InvalidDataException;
 
-    void deleteContactsByUserId(Long userId) throws ResourceNotFoundException;
+    void deleteContactsByUserId(Long userId);
 
     List<ContactResponseDto> findContactsByUserId(Long userId) throws ResourceNotFoundException;
 
