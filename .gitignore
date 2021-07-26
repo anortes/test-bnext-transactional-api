@@ -1,7 +1,7 @@
 .gradle
 /build/
 /db/
-.DS_Store
+**/.DS_Store
 
 # Ignore Gradle GUI config
 gradle-app.setting
