@@ -44,6 +44,8 @@ Levantar el entorno Docker (MongoDB + Aplicación Java)
 ```bash
 docker-compose up
 ```
-## Inclusión de swagger
+## Inclusión de swagger y colección de Postman
 Para ver la documentación de la api, una vez levantada la aplicación, acceder a:
 http://localhost:8080/api/v1/swagger-ui/index.html
+
+También se ha incluido la colección Postman en la carpeta "data", ubicada en el directorio raíz del proyecto.
