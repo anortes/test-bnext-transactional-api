@@ -1,6 +1,10 @@
-package com.bnext.api.dtos;
+package com.bnext.api;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import org.bson.types.ObjectId;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
@@ -9,11 +13,10 @@ import javax.validation.constraints.Size;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class ContactRequestDto {
+public class Contact {
 
-    private long id;
-
-    private long userId;
+    @NotBlank
+    private ObjectId userId;
 
     @NotBlank
     @Size(max = 50)
@@ -23,5 +26,4 @@ public class ContactRequestDto {
     @NotBlank
     @Size(max = 15)
     private String phone;
-
 }

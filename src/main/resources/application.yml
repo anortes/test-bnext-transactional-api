@@ -1,0 +1,10 @@
+micronaut:
+  application:
+    name: testBnextTransactionalApi
+  server:
+    context-path: /api/v1/
+
+mongodb:
+  #uri: mongodb://mongo-db:27017/TestBnextDB
+  uri: mongodb://localhost:27017/TestBnextDB
+

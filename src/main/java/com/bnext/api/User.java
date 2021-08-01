@@ -1,19 +1,21 @@
-package com.bnext.api.dtos;
+package com.bnext.api;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.validation.constraints.NotBlank;
+
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class ContactResponseDto {
+public class User {
 
-    private long id;
-    private long userId;
+    @NotBlank
     private String firstName;
     private String lastName;
-    private String phone;
+    @NotBlank
+    private String email;
 }
